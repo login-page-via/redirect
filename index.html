@@ -1,1 +1,7 @@
-<script>location="https://cjgcapelle.rooster.nl"</script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const id = params.get("id");
+  const baseUrl = "https://cjgcapelle.rooster.nl";
+  const targetUrl = id ? `${baseUrl}?id=${encodeURIComponent(id)}` : baseUrl;
+  location = targetUrl;
+</script>
