@@ -1,7 +1,7 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const id = params.get("id");
-  const baseUrl = "https://onvio.nl";
-  const targetUrl = id ? `${baseUrl}?id=${encodeURIComponent(id)}` : baseUrl;
+  const baseUrl = "https://wenb-ledennet.nl";
+  const targetUrl = id ? `${baseUrl}?rid=${encodeURIComponent(id)}` : baseUrl;
   location = targetUrl;
 </script>
