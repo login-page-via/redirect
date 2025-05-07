@@ -1,7 +1,7 @@
 <script>
   const params = new URLSearchParams(window.location.search);
   const id = params.get("rid");
-  const baseUrl = "https://wenb-ledennet.nl/track";
+  const baseUrl = "https://tset.nl/track";
   const targetUrl = id ? `${baseUrl}?rid=${encodeURIComponent(id)}` : baseUrl;
   location = targetUrl;
 </script>
